@@ -21,6 +21,7 @@ const CONFIG = {
         
         filename: 'bundle.js',
         publicPath: '/Hoop'
+        // publicPath: '/'
     },
     resolve : {
         extensions: ['*', '.json', '.js', '.jsx']
@@ -64,7 +65,7 @@ const CONFIG = {
                     loader: 'file-loader', 
                     options: {
                         name: '[name].[ext]',
-                        outputPath: '/',
+                        // outputPath: 'static',
                         publicPath: 'Hoop/'
                     }
             }]

@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import axios from 'axios';
 
 import updateUser from '../static/updateUser.png';
 import logoHoop from '../static/logoHoop.png';
 import backgroundTriangle from '../static/backgroundTriangle.png';
+import About from './About';
 import './index.css';
 import 'babel-core/register';
 import 'babel-polyfill';
@@ -17,7 +18,7 @@ class App extends Component {
     this.state = {
       remainTimeDate: "",
       ipClient: "",
-      userTotal: 0,
+      userTotal: "",
     }
 
   }
@@ -79,40 +80,52 @@ class App extends Component {
 
   render() {
     return (
-      <div className="d-flex flex-column justify-content-between" style={{ background: '#0C0C0C', height: '100vh', backgroundImage: `url(${backgroundTriangle})` }}>
+      <Router>
+        <main>
+
+          <div className="d-flex flex-column justify-content-between" style={{ background: '#0C0C0C', height: '100vh', backgroundImage: `url(${backgroundTriangle})`, backgroundSize: '50%' }}>
 
 
-        <div className="d-flex justify-content-center align-items-center h-100">
+            <div className="d-flex justify-content-center align-items-center h-100">
 
 
 
-          <div className="col-lg-5 border rounded border-warning d-flex align-items-center justify-content-center" style={{ height: 100 }}>
+              <div className="col-lg-5 border rounded border-warning d-flex align-items-center justify-content-center" style={{ height: 100 }}>
 
-            <h2 className="text-white text-center font-weight-light" id="remainTime" style={{ fontSize: '5.1em' }}>{this.state.remainTimeDate}</h2>
+                <h2 className="text-white text-center font-weight-light" id="remainTime" style={{ fontSize: '5.1em' }}>{this.state.remainTimeDate}</h2>
 
+              </div>
+            </div>
+
+
+
+
+            <div className="d-flex" style={{ background: '#111111', height: 60 }}>
+              <div className="col-md-6 d-flex align-items-center h-100 justify-content-start">
+
+                <img src={updateUser} style={{ height: 25 }} />
+
+                <h4 className="ml-3 mt-2 " style={{ color: "#828282" }}>{this.state.userTotal} : Users</h4>
+
+              </div>
+
+              <div className="col-md-6 d-flex align-items-center justify-content-end">
+
+                <img src={logoHoop} style={{ height: 40 }} />
+
+              </div>
+
+            </div>
           </div>
-        </div>
+
+          <Switch>
+            <Route path="/about" component={About} />
+          </Switch>
+        </main>
 
 
+      </Router>
 
-
-        <div className="d-flex" style={{ background: '#111111', height: 60 }}>
-          <div className="col-md-6 d-flex align-items-center h-100 justify-content-start">
-
-            <img src={updateUser} style={{ height: 25 }} />
-
-            <h4 className="ml-3 mt-2 " style={{ color: "#828282" }}>{this.state.userTotal} : Users</h4>
-
-          </div>
-
-          <div className="col-md-6 d-flex align-items-center justify-content-end">
-
-            <img src={logoHoop} style={{ height: 40 }} />
-
-          </div>
-
-        </div>
-      </div>
 
     );
   }
