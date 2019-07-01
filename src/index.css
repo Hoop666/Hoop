@@ -2,13 +2,6 @@ body {
   font-family: Poppins,sans-serif;
 }
 
-@media only screen and (max-width: 1220px) {
-
-  #remainTime { 
-     font-size: 3em !important; 
-  }
-
-}
 
 @media only screen and (max-width: 720px) {
 
