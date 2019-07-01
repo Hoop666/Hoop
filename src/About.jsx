@@ -11,7 +11,7 @@ export default class About extends Component {
                     <h1 className="text-white text-center mb-4">public blockchain platform</h1>
 
                     <p className="text-center text-white font-weight-light" style={{ fontSize: 20 }}>It's a blockchain that aims to create a video game to win or lose tokens. but equally if you run out of
-                     chips you can recover by watching ads or by making captchas <Link to="/">go back</Link></p>
+                     chips you can recover by watching ads or by making captchas <Link to="/Hoop/">go back</Link></p>
 
 
                 </div>
