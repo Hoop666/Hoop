@@ -89,7 +89,7 @@ class Home extends Component {
 
                     <div className="col-lg-5 border rounded border-warning d-flex align-items-center justify-content-center" style={{ height: 100 }}>
 
-                        <h2 className="text-white text-center font-weight-light" id="remainTime" style={{ fontSize: '5.1em' }}>{this.state.remainTimeDate}</h2>
+                        <h2 className="text-white text-center font-weight-light" id="remainTime" style={{ fontSize: '4em' }}>{this.state.remainTimeDate}</h2>
 
                     </div>
                 </div>
@@ -98,7 +98,7 @@ class Home extends Component {
 
 
                 <div className="d-flex" style={{ background: '#111111', height: 60 }}>
-                    <div className="col-md-7 d-flex align-items-center h-100 justify-content-start">
+                    <div className="col-md-6 d-flex align-items-center h-100 justify-content-start">
 
                         <img src={updateUser} style={{ height: 25 }} />
 

@@ -10,3 +10,11 @@ body {
   }
 
 }
+
+@media only screen and (max-width: 1220px) {
+
+  #remainTime { 
+     font-size: 3em !important; 
+  }
+
+}
