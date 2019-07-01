@@ -5,7 +5,7 @@ import axios from 'axios';
 import updateUser from '../static/updateUser.png';
 import logoHoop from '../static/logoHoop.png';
 import backgroundTriangle from '../static/backgroundTriangle.png';
-
+import './index.css';
 import 'babel-core/register';
 import 'babel-polyfill';
 
@@ -18,7 +18,6 @@ class App extends Component {
       remainTimeDate: "",
       ipClient: "",
       userTotal: 0,
-      remainDays: "",
     }
 
   }
@@ -34,8 +33,7 @@ class App extends Component {
         remainHours,
         remainDays } = this.getRemainTime('August 31 2019 18:26:47 GMT-0500');
 
-      this.setState({ remainDays: `${remainDays}` })
-      this.setState({ remainTimeDate: `: ${remainHours} : ${remainMinutes} : ${remainSeconds}` });
+      this.setState({ remainTimeDate: `${remainDays} : ${remainHours} : ${remainMinutes} : ${remainSeconds}` });
 
       if (remainTime <= 1) {
         clearInterval(timeUpdate);
@@ -88,10 +86,9 @@ class App extends Component {
 
 
 
-          <div className="col-md-5 border rounded border-warning row align-items-center justify-content-center" style={{ height: 100 }}>
+          <div className="col-lg-5 border rounded border-warning d-flex align-items-center justify-content-center" style={{ height: 100 }}>
 
-            <h2 className="text-white text-center font-weight-light" style={{ fontSize: 70 }} >{this.state.remainDays}&nbsp;</h2>
-            <h2 className="text-white text-center font-weight-light" style={{ fontSize: 70 }}>{this.state.remainTimeDate}</h2>
+            <h2 className="text-white text-center font-weight-light" id="remainTime" style={{ fontSize: '5.1em' }}>{this.state.remainTimeDate}</h2>
 
           </div>
         </div>
