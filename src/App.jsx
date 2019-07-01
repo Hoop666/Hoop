@@ -107,6 +107,8 @@ class App extends Component {
 
                 <h4 className="ml-3 mt-2 " style={{ color: "#828282" }}>{this.state.userTotal} : Users</h4>
 
+                <Link to="/about">About</Link>
+
               </div>
 
               <div className="col-md-6 d-flex align-items-center justify-content-end">
