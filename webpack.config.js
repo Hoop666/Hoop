@@ -19,7 +19,7 @@ const CONFIG = {
     output: {
         path: PATH.build,
         filename: 'bundle.js',
-        publicPath: '/porfolio/'
+        publicPath: '/Hoop'
     },
     resolve : {
         extensions: ['*', '.json', '.js', '.jsx']
