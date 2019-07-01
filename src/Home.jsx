@@ -109,7 +109,7 @@ class Home extends Component {
 
                     <div className="col-md-6 d-flex align-items-center justify-content-end">
 
-                        <Link to="/about"><img src={logoHoop} style={{ height: 40 }} /></Link>
+                        <Link to="/Hoop/about"><img src={logoHoop} style={{ height: 40 }} /></Link>
 
                     </div>
 
