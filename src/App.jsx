@@ -31,7 +31,7 @@ class App extends Component {
         remainSeconds,
         remainMinutes,
         remainHours,
-        remainDays } = this.getRemainTime('August 31 2019 18:26:47 GMT-0500');
+        remainDays } = this.getRemainTime('Jul 30 2019 18:26:47 GMT-0500');
 
       this.setState({ remainTimeDate: `${remainDays} : ${remainHours} : ${remainMinutes} : ${remainSeconds}` });
 

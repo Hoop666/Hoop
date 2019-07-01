@@ -18,8 +18,9 @@ const CONFIG = {
     },
     output: {
         path: PATH.build,
+        
         filename: 'bundle.js',
-        publicPath: '/'
+        publicPath: '/Hoop'
     },
     resolve : {
         extensions: ['*', '.json', '.js', '.jsx']
@@ -59,7 +60,14 @@ const CONFIG = {
             },
             {
                 test: /\.(png|svg|jpe?g|gif)$/,
-                use: ['file-loader']
+                use: [{
+                    loader: 'file-loader', 
+                    options: {
+                        name: '[name].[ext]',
+                        outputPath: 'img/',
+                        publicPath: 'Hoop/'
+                    }
+            }]
             }
         ]
     },
