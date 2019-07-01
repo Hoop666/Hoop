@@ -66,7 +66,7 @@ const CONFIG = {
                     options: {
                         name: '[name].[ext]',
                         // outputPath: 'static',
-                        publicPath: '/'
+                        publicPath: 'Hoop/'
                     }
             }]
             }
