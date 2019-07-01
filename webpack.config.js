@@ -64,7 +64,7 @@ const CONFIG = {
                     loader: 'file-loader', 
                     options: {
                         name: '[name].[ext]',
-                        outputPath: 'img/',
+                        outputPath: '/',
                         publicPath: 'Hoop/'
                     }
             }]
