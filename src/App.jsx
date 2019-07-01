@@ -18,8 +18,8 @@ class App extends Component {
       <Router>
 
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
+          <Route exact path="/Hoop/" component={Home} />
+          <Route path="/Hoop/about" component={About} />
         </Switch>
 
 
