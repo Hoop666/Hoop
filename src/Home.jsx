@@ -98,7 +98,7 @@ class Home extends Component {
 
 
                 <div className="d-flex" style={{ background: '#111111', height: 60 }}>
-                    <div className="col-md-6 d-flex align-items-center h-100 justify-content-start">
+                    <div className="col-md-7 d-flex align-items-center h-100 justify-content-start">
 
                         <img src={updateUser} style={{ height: 25 }} />
 
