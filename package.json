@@ -15,7 +15,7 @@
   "homepage": "https://github.com/Hoop666/Hoop",
   "dependencies": {
     "gh-pages": "^2.0.1",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "bootstrap": "^4.3.1",
     "concurrently": "^4.1.0",
     "express": "^4.16.4",
